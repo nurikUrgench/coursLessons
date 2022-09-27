@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import "reset.css";
+
+
+.page{
+    padding: 20px;
+}
+
+.container{
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+.header{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    margin-bottom: 50px;
+    color: #1E212C;
+}
+
+.image{
+    margin-bottom: 60px;
+}
+
+.text-bold{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+}
+
+.text-bold-1{
+    margin-bottom: 32px;
+}
+.text-bold-2{
+    margin-left: 55px;
+    margin-bottom: 50px;
+}
+
+.text-regular{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
+
+.text-regular>p{
+    margin-bottom: 35px;
+}
+
+.text-regular-2{
+    margin-bottom: 30px;
+}
+
+
+.list{
+    margin-left: 55px;
+    margin-bottom: 50px;
+}
+
+.list-item{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
