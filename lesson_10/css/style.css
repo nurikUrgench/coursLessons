@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import "reset.css";
+
+body{
+	font-family: "Lato";
+	font-weight: 400;
+}
+
+.wrapper {
+}
+.wrapper__container {
+	max-width: 1200px;
+	margin: auto;
+}
+.article {
+}
+.article__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	margin-bottom: 26px;
+
+}
+.article__image{
+	text-align: center;
+	margin-bottom: 60px;
+}
+.article__image img{
+	max-width: 100%;
+}
+.article__text {
+}
+.text {
+}
+.text__bold {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+}
+.text__bold--1{
+	margin-bottom: 20px;
+}
+.text__regular {
+	line-height: 160%;
+}
+.text__regular--1{
+	margin-bottom: 48px;
+}
+.text__regular--2{
+	margin-bottom: 19px;
+}
+.text__bold--quote {
+	padding-left: 58px;
+	background: url(../img/braces.svg) 0px 5px no-repeat;
+	margin-bottom: 48px;
+}
+.text__list{
+	margin: 0px auto 56px auto;
+	
+}
+.text__list li{
+	
+	line-height: 160%;
+	padding-left: 32px;
+	background:url(../img/icons/Vector.png) 0 4px no-repeat ;
+}
+.text__regular--3{
+	margin-bottom: 50px;
+}
