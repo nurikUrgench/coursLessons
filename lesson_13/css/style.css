@@ -1,0 +1,209 @@
+@import "reset.css";
+@import "text-page.css";
+.wrapper {
+	font-family: sans-serif;
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+.header {
+	background-color: rgb(250, 195, 195);
+	min-height: 80px;
+
+}
+
+[class*="__container"]{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.header__container{}
+
+.header__content {
+	padding: 20px; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	outline: 3px dashed black;
+	display: inline-block;
+	background-color: darkgoldenrod;
+	animation:logo-rotate 3s infinite linear reverse;
+}
+.header__logo:hover{
+	animation-play-state: paused;
+}
+
+@keyframes logo-rotate {
+	0%{
+		transform: rotate(0deg);
+		
+	}
+	100%{
+	
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
+.header__list{
+	display: inline-block;
+}
+.header__list li{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700;
+}
+.header__list li:not(:last-child){
+	margin-right: 20px;
+	
+}
+.header__link {
+	color: white;
+	display: inline-block;
+	padding: 3px 0px;
+	letter-spacing: 2px;
+	position: relative;
+}
+.header__link::before{
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: darkgreen;
+	transition: all 0.5s ease 0s;
+	opacity: 0;
+}
+
+.header__link:hover::before{
+	width: 100%;
+	height: 2px;
+	opacity: 1;
+}
+
+.car {
+	border-bottom: 5px solid rgb(250, 195, 195);
+	
+}
+.car__container {
+	
+}
+.car__content {
+	margin-top: 100px;
+	padding-bottom: 33px;
+}
+.car__body {
+	width: 300px;
+	height: 150px;
+	background-color: darkgreen;
+	border-radius: 50% 50% 0 0 ;
+	position: relative;
+
+	display: inline-block;
+	animation:car-rotate 4s infinite linear;
+	
+}
+.car__body:hover{
+	animation-play-state: paused;
+}
+
+
+@keyframes car-rotate{
+	0%{
+		left: -300px;
+	}
+	50%{
+		left: 100px;
+	}
+	80%{
+		left: 100px;
+	}
+	100%{
+		left: 1000px;
+	}
+
+}
+.car__wheels {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+}
+.car__wheels::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	bottom: -35px;
+	left: 10px;
+	background-color: black;
+	border-radius: 50%;
+	outline: 5px dashed black;
+	animation:wheels-rotate 2s infinite linear;
+}
+
+.car__wheels::after{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	bottom: -35px;
+	right: 10px;
+	background-color: black;
+	border-radius: 50%;
+	outline: 5px dashed black;
+	animation:wheels-rotate 2s infinite linear ;
+}
+@keyframes wheels-rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+.block-box {
+	text-align: center;
+	margin-top: 30px;
+	font-weight: 700;
+}
+.__container {
+}
+.block-box__item {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: darkslategray;
+	
+}
+.block-box__item::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: transform 3s ease-in-out 1s,background-color 0.3s ease-in-out 4s;
+	background-color: red;
+	z-index: -1;
+}
+.block-box__item:hover::before{
+	transform: translate(100%,0);
+	background-color: yellow;
+	
+}
+
+
+

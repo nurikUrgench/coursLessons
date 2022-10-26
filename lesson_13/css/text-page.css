@@ -1,0 +1,39 @@
+
+.text-block {
+	margin-top: 30px;
+	
+}
+
+
+.text-block__container {
+}
+.text-block__title {
+	font-weight: 700;
+	font-size: 40px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+	animation: title 1s 1 linear forwards ;
+	transform: translate(0,15px);
+}
+.text-block__subtitle {
+	font-weight: 700;
+	font-size: 25px;
+	margin-bottom: 10px;
+	animation: title 2s 1 linear forwards ;
+	transform: translate(0,15px);
+}
+.text-block__info {
+	line-height: 1.4;
+	font-weight: 700;
+	animation: title 3s 1 linear forwards;
+	transform: translate(0,15px);
+}
+@keyframes title {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0.0);		
+	}
+}
