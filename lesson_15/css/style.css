@@ -1,0 +1,359 @@
+@import "reset.css";
+@import "common.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+body{
+	font-family: "Lato";
+	color: #424551;
+}
+[class*="__container"]{
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+/* ========================= header start ================================ */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 33px 0px;
+	z-index: 50;
+
+}
+.header__container {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+.header__logo {
+}
+.header__menu {
+	flex-grow: 1;
+}
+.header__actions {
+}
+
+.menu {
+	
+}
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap:40px;
+	row-gap:7px;
+}
+.menu__item {
+}
+.menu__link {
+	font-weight: 700;
+	line-height: 160%;
+}
+.menu__link:hover{
+	text-decoration: underline;
+}
+
+.actions-header {
+	display: flex;
+	align-items: center;
+	gap: 36px;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+}
+.actions-header__button {
+}
+.actins-header__auth {
+	background: url(../img/header/Person.svg) 0 0 no-repeat;
+	padding-left: 28px;
+	font-weight: 700px;
+	line-height: 125%;
+	
+}
+.actins-header__auth:hover{
+	text-decoration: underline;
+}
+
+/* ========================= header end================================ */
+/* ============================= page-main ===================================== */
+
+.main__page {
+	position: relative;
+
+}
+.page-main {
+	padding: 200px 0px 80px 0px;
+	background: linear-gradient(55.95deg, rgb(255, 149, 147, 0.3) 26.04%, rgb(247, 94, 5, 0.2) 100%);
+}
+.page-main__container {
+	position: relative;
+	z-index: 2;
+}
+
+.page-main__body {
+	margin-bottom: 190px;
+}
+.body-page-main {
+	display: flex;
+}
+.body-page-main__content {
+	flex: 0 1 50%;
+	padding-right: 50px;
+	align-self: center;
+}
+.body-page-main__media img{
+	max-width: 107.8%;
+	transform: translate(7.8%,0);
+}
+.body-page-main__play {
+	font-weight: 700;
+	font-size: 14px;
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	gap: 16px;
+	margin-bottom: 40px;
+}
+.body-page-main__play::before{
+	content: "";
+	background: #FF3F3A url(../img/decor/play.svg)  center  no-repeat;
+	flex: 0 0 52px;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+
+}
+.body-page-main__play::after{
+	content: "";
+	background-color: rgb(255, 63, 58, 0.2);
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	transform: scale(1);
+	position: absolute;
+	left: 0;
+	top: 0; 
+	animation:play-circle 1s infinite linear ;
+}
+@keyframes  play-circle {
+	0%{
+		
+	}
+	100%{
+		opacity: 0;
+		transform: scale(2.3);
+	}
+}
+
+.body-page__title {
+	margin-bottom: 60px;
+	
+}
+.title{
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 130%;
+	color: #1E212C;
+}
+.body-page__actions {
+	display: flex;
+	gap:24px;
+	align-items: center;
+	justify-content: start;
+}
+.body-page__button {
+}
+
+.button--border {
+	
+}
+.page-main__advantages {
+}
+.advantages-page-main {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
+}
+.advantages-page-main__item {}
+
+.item-advantages {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.item-advantages__point{
+	flex: 0 0 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #FF3F3A;
+}
+.item-advantages__value {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color:#1E212C;
+}
+.item-advantages__text {
+	color: #1E212C;
+}
+
+
+.page-main__decor {
+
+}
+.decor-page-main {
+	
+}
+.decor-page-main__item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	
+}
+.decor-page-main__item-1 {
+	left:75%;
+	top:71%;
+	width: 187px;
+	height: 137px;
+	background: url(../img/decor/dots.svg);
+
+}
+.decor-page-main__item-2 {
+	left: 4.5%;
+	top:  12.5%;
+	width: 110px;
+	height: 110px;
+	background: url(../img/decor/shapes.svg);
+	transform: rotate(-130deg);
+}
+.decor-page-main__item-3 {
+	left: 70%;
+	top:  0;
+	width: 110px;
+	height: 110px;
+	background: url(../img/decor/shapes.svg);
+	
+}
+.decor-page-main__item-4 {
+	left: 30%;
+	top:  40%;
+	width: 110px;
+	height: 110px;
+	background: url(../img/decor/Vector.svg);
+	
+}
+.decor-page-main__item-5 {
+}
+.decor-page-main__item-6 {
+}
+
+/* ============================= page-main  END ===================================== */
+
+/* ================================   who we are  start      =================================== */
+
+.main__whoweare {
+	position: relative;
+	margin-top: 180px;
+}
+.whoweare-main {
+}
+.whoweare-main__container {
+	display: flex;
+	gap: 135px;
+	position: relative;
+	z-index: 2;
+}
+.whoweare-main__image {
+	flex: 0 1 58%;
+}
+.whoweare-main__image img{
+	max-width: 100%;
+}
+.whoweare-main__content {
+	flex: 0 1 32%;
+	align-self: center;
+}
+.content-whoweare {
+}
+.content-whoweare__label {
+	font-weight: 700;
+	font-size: 16px;
+	color: #1E212C;
+	margin-bottom: 8px;
+}
+.content-whoweare__title {
+	margin-bottom: 40px;
+	font-size: 46px;
+}
+.title {
+}
+.content-whoweare__list {
+	margin-bottom: 48px;
+	
+}
+.content-whoweare__item {
+	line-height: 1.6;
+	position: relative;
+	padding-left: 32px;
+}
+.content-whoweare__item::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 5px;
+	background: url(../img/icons/Vector.svg);
+	width: 15.33px;
+	height: 15.67px;
+	transition: all 0.5s ease 0s;
+
+}
+.content-whoweare__item:hover::before{
+	transform: rotate(360deg);
+}
+.content-whoweare__item:not(:last-child){
+	margin-bottom: 12px;
+}
+
+.content-whoweare__button {
+}
+.button {
+}
+
+
+.whoweare-main__decor {
+}
+.decor-whoweare {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	
+}
+.decor-whoweare__item {
+	position: absolute;
+}
+.decor-whoweare__item-1 {
+	background: url(../img/decor_who_we_are/dots.svg);
+	width: 181.18px;
+	height: 181.74px;
+	left: -80px;
+	top: 12.6%;
+	transform: rotate(-180deg);
+}
+.decor-whoweare__item-2 {
+	background: url(../img/decor_who_we_are/Vector.svg);
+	width: 225px;
+	height: 225px;
+	right:0;
+	bottom: 0;
+	color: rgb(255, 207, 45);
+	opacity: 0.2;
+	transform: translate(125px,0);
+}
