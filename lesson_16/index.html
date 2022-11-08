@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lesson_16-forms</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header"></div>
+		<main class="main">
+			<div class="questions">
+				<div class="questions__container">
+					<div class="question__image">
+						<img src="img/any-questions/illustration.svg" alt="">
+					</div>
+					<div class="questions__body body-questions">
+						<div class="body-questions__label">
+							Any questions?
+						</div>
+						<div class="body-questions__title">
+							Drop us a line
+						</div>
+						<form action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data"
+							class="body-questions__form form">
+							<div class="form__inputs inputs-form">
+								<div class="inputs-form__wrapper">
+									<div class="inputs-form__line">
+										<label for="first-name" class="inputs-form__label"><span>First Name*</span></label>
+										<input class="inputs-form__input" required type="text" name="first-name" id="first-name"
+											placeholder="Your first name">
+									</div>
+								</div>
+								<div class="inputs-form__wrapper">
+									<div class="inputs-form__line">
+										<label for="last-name" class="inputs-form__label"><span>Last Name*</span></label>
+										<input class="inputs-form__input" required type="text" name="last-name" id="last-name"
+											placeholder="Your last name">
+									</div>
+								</div>
+								<div class="inputs-form__wrapper">
+									<div class="inputs-form__line">
+										<label for="email" class="inputs-form__label"><span>Email*</span></label>
+										<input class="inputs-form__input" required type="email" name="email" id="email"
+											placeholder="Your working email">
+									</div>
+								</div>
+								<div class="inputs-form__wrapper">
+									<div class="inputs-form__line">
+										<label for="first-name" class="inputs-form__label"><span>Phone</span></label>
+										<input class="inputs-form__input" required type="number" name="phone" id="phone"
+											placeholder="Your phone number">
+									</div>
+								</div>
+								<div class="inputs-form__wrapper-textarea">
+									<div class="inputs-form__line-textarea">
+										<label for="message" class="inputs-form__label"><span>Message*</span></label>
+										<textarea name="message" id="message" placeholder="Your message"></textarea>
+									</div>
+								</div>
+								<div class="inputs-form__send-message-block">
+									<div class="inputs-form__line-checkbox">
+										<input required type="checkbox" name="agree" value="yes" id="agree">
+										<label  for="agree" class="inputs-form__label-checkbox"><span>I agree to receive communications from Createx Online School</span></label>
+									</div>
+									<div class="inputs-form__line-button">
+										<button type="submit"><span>Send message</span></button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
