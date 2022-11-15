@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    color: inherit;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+img{
+    vertical-align: top;
+}
+input,button,textarea{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+input{
+	width: 100%;
+}
+textarea{
+	width: 100%;
+}
+button{
+    cursor: pointer;
+    color: inherit;
+    background-color: inherit;
+}
+html,
+body{
+	height: 100%;
+}
+body{
+	line-height: 1;
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}

@@ -1,0 +1,83 @@
+/* ======================================== .button ========================  */
+
+.button{
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	border-radius: 4px;
+	display:inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 40px;
+	position: relative;
+
+
+	line-height: 1.2;
+	font-weight: 700;
+	color: white;
+	letter-spacing: 0.5px;
+}
+.button span{
+	position: relative;
+	z-index: 2;
+}
+.button::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(55.95deg, #bf2f2a 0%, #ef610e 100%);
+	border-radius: 4px;
+	transition: all 0.3s linear 0s;
+	opacity: 0;
+}
+.button:hover::before{
+	opacity: 1;
+}
+/* ======================================== .button End ========================  */
+
+
+
+
+/* ======================================== .button--transparent ========================  */
+.button--transparent{
+	background: transparent;
+	border-radius: 4px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 14px 40px;
+	position: relative;
+	border: 1px solid #FF3F3A ;
+
+	line-height: 1.2;
+	font-weight: 700;
+	color:#FF3F3A ;
+	letter-spacing: 0.5px;
+}
+
+.button--transparent::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 4px;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	transition: all 0.3s linear 0s;
+	opacity: 0;
+}
+.button--transparent span{
+	position: relative;
+	z-index: 2;
+}
+.button--transparent:hover.button--transparent span{
+	color: white;
+} 
+.button--transparent:hover::before{
+	opacity: 1;
+}
+
+/* ======================================== .button--transparent end ========================  */
+
