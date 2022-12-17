@@ -1,0 +1,56 @@
+.page {
+    color: white;
+    background-color: darkorange;
+    min-height: 100vh;
+    padding: 50px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.page__syntax {
+
+}
+.syntax {
+    margin-bottom: 25px;
+}
+.syntax__title {
+}
+.title { 
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.syntax__error {
+}
+.label {
+}
+.syntax__text {
+}
+.page__variables {
+}
+.variables {
+    margin-bottom: 25px;
+
+}
+.variables__title {
+}
+.variables__text {
+}
+.variables__bold {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.page__data-types {
+}
+.data-types {
+}
+.data-types__title {
+}
+.data-types__label {
+}
